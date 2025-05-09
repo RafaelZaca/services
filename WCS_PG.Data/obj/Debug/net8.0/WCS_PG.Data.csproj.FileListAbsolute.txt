@@ -1,0 +1,15 @@
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\bin\Debug\net8.0\WCS_PG.Data.deps.json
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\bin\Debug\net8.0\WCS_PG.Data.runtimeconfig.json
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\bin\Debug\net8.0\WCS_PG.Data.dll
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\bin\Debug\net8.0\WCS_PG.Data.pdb
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\WCS_PG.Data.csproj.AssemblyReference.cache
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\WCS_PG.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\WCS_PG.Data.AssemblyInfoInputs.cache
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\WCS_PG.Data.AssemblyInfo.cs
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\WCS_PG.Data.csproj.CoreCompileInputs.cache
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\WCS_PG.Data.dll
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\refint\WCS_PG.Data.dll
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\WCS_PG.Data.pdb
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\WCS_PG.Data.genruntimeconfig.cache
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\ref\WCS_PG.Data.dll
+C:\Users\Rafael\source\repos\WCS_PG\WCS_PG.Data\obj\Debug\net8.0\WCS_PG.Data.sourcelink.json

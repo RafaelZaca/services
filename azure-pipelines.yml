@@ -1,0 +1,51 @@
+# Docker
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- master
+
+resources:
+- repo: self
+
+variables:
+  tag: '$(Build.BuildId)'
+
+stages:
+- stage: Build
+  displayName: Build image
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    # Checkout explícito para garantir acesso ao repositório
+    - checkout: self
+      persistCredentials: true
+      fetchDepth: 0
+      
+    # Espelhar branch master para o GitHub
+    - bash: |
+        echo "Configurando git..."
+        git config --global user.email "azure-pipeline@zcksoftware.com.br"
+        git config --global user.name "Azure Pipeline"
+        
+        echo "Adicionando remote do GitHub..."
+        git remote add github https://$(githubPAT)@github.com/RafaelZaca/WCS_PG.git || echo "Remote já existe ou erro ao adicionar"
+        
+        echo "Tentando checkout da branch master..."
+        git checkout master || git checkout -b master
+        
+        echo "Enviando conteúdo atual para o GitHub..."
+        git push -f github HEAD:refs/heads/master
+      displayName: 'Espelhar branch master para GitHub'
+      
+    # Build da imagem Docker  
+    - task: Docker@2
+      displayName: Build an image
+      inputs:
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/WCS_PG.Services/Dockerfile'
+        tags: |
+          $(tag)

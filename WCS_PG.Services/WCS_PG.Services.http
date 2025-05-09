@@ -1,0 +1,6 @@
+@WCS_PG.Services_HostAddress = http://localhost:5235
+
+GET {{WCS_PG.Services_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
